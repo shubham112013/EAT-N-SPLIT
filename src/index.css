@@ -23,6 +23,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-lightest),
+    var(--color-light)
+  ); /* Soft gradient background */
 }
 
 .app {
@@ -31,6 +36,10 @@ body {
   grid-template-columns: 34rem 44rem;
   column-gap: 4rem;
   align-items: start;
+  background-color: #ffffff; /* White background for the app container */
+  padding: 2rem; /* Adds some padding for a more balanced layout */
+  border-radius: 12px; /* Rounds the edges of the app container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .button {
@@ -166,4 +175,16 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 4.6rem; /* Scale up the font size */
+  font-weight: bold;
+  color: var(--color-dark); /* Use the dark accent color */
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 6rem;
+
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
 }
